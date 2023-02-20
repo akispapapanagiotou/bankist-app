@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META TAGS -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- TITLE -->
+  <title>Bankist</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <!-- MAIN NAVIGATION -->
+    <nav class="main-navigation">
+      <h2 class="welcome-message">Log in to get started</h2>
+      <img src="img/logo.png" alt="logo" class="icon">
+      <!-- LOGIN FORM -->
+      <form class="login">
+        <input type="text" name="user" class="login__input login__input--user" placeholder="user">
+        <input type="password" name="pin" class="login__input login__input--pin" placeholder = "PIN" max-length="4">
+        <button type="submit" class="login__submit">&rarr;</button>
+      </form>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main">
+    
+    <!-- BALANCE -->
+    <section class="balance">
+      <div>
+        <h2 class="balance_label">Current balance</h2>
+        <p class="balance_date">As of <span class="date">13/03/2025</span></p>
+      </div>
+      <h1 class="balance_value">18200,67</h1>
+    </section>
+
+    <!-- MOVEMENTS -->
+    <section class="movements">
+      <div class="movements__row">
+        <div class="movements__type movements__type--deposit">2 deposit</div>
+        <div class="movements__date">03/09/2025</div>
+        <div class="movements__value">2500</div>
+      </div>
+      <div class="movements__row">
+        <div class="movements__type movements__type--withdrawal">1 withdrawal</div>
+        <div class="movements__date">2 days ago</div>
+        <div class="movements__value">-300</div>
+      </div>
+    </section>
+
+    <!-- OPERATIONS -->
+    <section class="operations">
+
+      <!-- OPERATION: TRANSFER -->
+      <div class="operation operation--transfer">
+        <h2>Transfer money</h2>
+        <form class="form form--transfer">
+          <input type="text" name="to-user" class="form__input form__input--to">
+          <input type="number" name="amount" class="form__input form__input--amount">
+          <button type="submit" class="form__btn form__btn--transfer">&rarr;</button>
+          <label class="form__label">Transfer to</label>
+          <label class="form__label">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: LOAN -->
+      <div class="operation operation--loan">
+        <h2>Request loan</h2>
+        <form class="form form--loan">
+          <input type="number" name="amount" class="form__input form__input--amount">
+          <button type="submit" class="form__btn form__btn--loan">&rarr;</button>
+          <label class="form__label">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: CLOSE -->
+      <div class="operation operation--close">
+        <h2>Close account</h2>
+        <form class="form form--close">
+          <input type="text" name="user" class="form__input form__input--user">
+          <input type="password" name="pin" class="form__input form__input--pin">
+          <button type="submit" class="form__btn form__btn--close">&rarr;</button>
+          <label class="form__label">Confirm user</label>
+          <label class="form__label">Confirm PIN</label>
+        </form>
+      </div>
+    </section>
+
+    <!-- SUMMARY -->
+    <div class="summary">
+      <p class="summary__label">In</p>
+      <p class="summary__value summary__value--in">12330,24</p>
+      <p class="summary__label">Out</p>
+      <p class="summary__value summary__value--out">1929,54</p>
+      <p class="summary__label">Interest</p>
+      <p class="summary__value summary__value--interest">350,23</p>
+      <button class="btn--sort">&downarrow; SORT</button>
+    </div>
+    
+    <!-- LOGOUT TIMER -->
+    <div class="logout">
+      <p class="logout__text">You will be logged out in <span class="logout__timer">12:00</span></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
