@@ -1,5 +1,5 @@
 # 💸 Bankist App
-Bankist is a simple banking application built using HTML, CSS and JavaScript. It provides a clean and intuitive user interface 
+Bankist is a simple banking application built using HTML5, CSS and JavaScript. It provides a clean and intuitive user interface 
 that allows users to manage their finances easily.
 Log in credentials:
 * Username: pk | Password: 7171
@@ -10,6 +10,6 @@ Log in credentials:
 ## Links:
 Live site: https://bankist-app-vanilla-js.netlify.app/
 ## Built with:
-* HTML
+* HTML5
 * CSS
 * JavaScript
